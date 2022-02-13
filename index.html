@@ -2,33 +2,33 @@
 <html>
 <body>
 
-<button onclick="getRandomName()">New Name</button>
+<button onclick="getRandomName()">New Type</button>
 
-<p>Name: <span id="spa1">A </span><span id="spa2">B </span><span id="spa3">C </span></p>
+<p>Name: <span id="spa1">Adjective </span><span id="spa2">Noun </span><span id="spa3">Weed Type </span></p>
 
 <script>
 //Set Potential Names
-const SpanA = ["Legitimate ", "Legit ", "Power ", "Mystic ", "Mystical ", "Battle ", "Dawn ","Dragon ", "Fox ", "Ghost ", "Maximum ", "Wizard ", "Magic ", "Awesome ","Fantastic ", "Incredible ", "Amazing ", "Digital ", "Pheonix ", "Giga ","Omega ", "Ultra ", "Space ", "Star ", "Cultivated ",];
-const SpanB = ["Smoke ", "High ", "Bong ", "Crown ", "Blood "];
-const SpanC = ["Software", "Soft", "Wares", "Warez", "Corp", "Games", "Entertainment", "Tech", "Technology", "Company", "Industries", "Arts", "Limited", "Incorporated", "Inc", "Ltd", "Studios", "Team", "Clan"];
+const SpanA = ["Black ","White ","Red ","Thai ","Purple ","Lemon ","Strawberry ","Blueberry ","Chocolate ","Black ","Black","Black","Black","Black","Black","Black",];
+const SpanB = ["Jedi ","Cookie ","Deisel ",];
+const SpanC = ["Haze ","Kush","Yum-Yum","OG","Glue","Black","Black","Black","Black","Black","Black","Black","Black","Black","Black",];
 
 //Get Name Function
 function getRandomName() {
 
-//Set the words to be displayed
-var random1 = Math.floor(Math.random() * SpanA.length);
-var randomSpa1 = SpanA[random1];
+  //Set the words to be displayed
+  var random1 = Math.floor(Math.random() * SpanA.length);
+  var randomSpa1 = SpanA[random1];
 
-var random2 = Math.floor(Math.random() * SpanB.length);
-var randomSpa2 = SpanB[random2];
+  var random2 = Math.floor(Math.random() * SpanB.length);
+  var randomSpa2 = SpanB[random2];
 
-var random3 = Math.floor(Math.random() * SpanC.length);
-var randomSpa3 = SpanC[random3];
+  var random3 = Math.floor(Math.random() * SpanC.length);
+  var randomSpa3 = SpanC[random3];
 
-//Print words to Spans
-  document.getElementById("spa1").innerHTML = randomSpa1;
-  document.getElementById("spa2").innerHTML = randomSpa2;
-  document.getElementById("spa3").innerHTML = randomSpa3;
+  //Print words to Spans
+    document.getElementById("spa1").innerHTML = randomSpa1;
+    document.getElementById("spa2").innerHTML = randomSpa2;
+    document.getElementById("spa3").innerHTML = randomSpa3;
 }
 </script>
 
